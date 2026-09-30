@@ -1,0 +1,2 @@
+# golang_hexagonalscaffolder
+golang_hexagonalscaffolder for generating golang middleware artefacts later
