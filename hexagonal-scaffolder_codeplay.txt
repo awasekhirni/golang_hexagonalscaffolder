@@ -1,0 +1,25 @@
+// Copyright 2025 β ORI Inc.Canada All Rights Reserved.
+// Author: Awase Khirni Syed
+// Product Name: β ORI Inc. Hexagonal Architecture Generator in Golang
+// Golang Onion Architecture/Hexagonal Architecture Scaffolder Project
+// This is base project that is used as a scaffolder to automatically generate artefacts by connecting to database
+// this would help us render MVC style web api with end-points to render json web api later on.
+// this is base project enhanced script.
+
+
+aks@macmini scaffolderprj % mkdir -p hexagonal-scaffolder
+cd hexagonal-scaffolder
+go mod init scaffold && go run .
+
+
+generating the scaffold for hexagonal/onion architecture
+go run scaffold.go -dry-run                                  # preview the ~170 files
+go run scaffold.go -module github.com/betaori/hexagonal-api     # generate the onion architecture
+
+
+Next steps:
+  cd hexagonal_architecture_golang
+  go mod tidy
+  go build ./...
+  go test ./...
+  go run ./cmd/api
